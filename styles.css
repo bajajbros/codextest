@@ -1,0 +1,220 @@
+:root {
+  --bg: #0f0a1b;
+  --panel: rgba(255, 255, 255, 0.08);
+  --panel-strong: rgba(255, 255, 255, 0.16);
+  --text: #f7f6fb;
+  --muted: #b9b4cd;
+  --accent: linear-gradient(135deg, #d76eff 0%, #6d7bff 100%);
+  --gold: #ffcc8f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 15% 20%, #30145a 0%, transparent 35%),
+    radial-gradient(circle at 85% 0%, #53295b 0%, transparent 35%),
+    var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+.app-shell {
+  width: min(100%, 390px);
+  min-height: 844px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2rem;
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.45);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.kicker {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+h1 {
+  margin: 0.35rem 0 0;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  max-width: 17ch;
+}
+
+.icon-button {
+  border: 0;
+  width: 2.4rem;
+  aspect-ratio: 1;
+  border-radius: 0.9rem;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.hero-card {
+  border-radius: 1.25rem;
+  padding: 1rem;
+  background: linear-gradient(145deg, rgba(255, 204, 143, 0.35), rgba(215, 110, 255, 0.35));
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.pill {
+  margin: 0;
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+h2 {
+  margin: 0.7rem 0 0;
+  font-size: 1.2rem;
+}
+
+.hero-copy {
+  margin: 0.5rem 0 1rem;
+  color: #f6ecff;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.primary-button {
+  width: 100%;
+  border: 0;
+  border-radius: 0.9rem;
+  padding: 0.85rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #190f24;
+  background: linear-gradient(120deg, #ffe3ba, #ffd094);
+  cursor: pointer;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.action-card {
+  border: 1px solid transparent;
+  background: var(--panel);
+  color: var(--text);
+  border-radius: 0.9rem;
+  padding: 0.75rem 0.2rem;
+  font-size: 0.8rem;
+  display: grid;
+  gap: 0.35rem;
+  place-items: center;
+  cursor: pointer;
+}
+
+.action-card span {
+  font-size: 1.2rem;
+}
+
+.action-card.active,
+.nav-item.active {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: var(--panel-strong);
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: auto;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 0.95rem;
+  background: var(--panel);
+  padding: 0.7rem;
+}
+
+.avatar {
+  width: 2.45rem;
+  aspect-ratio: 1;
+  border-radius: 0.8rem;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: var(--accent);
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.service-card p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--gold);
+}
+
+.bottom-nav {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  background: rgba(13, 6, 24, 0.78);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.nav-item {
+  border: 0;
+  border-radius: 0.75rem;
+  background: transparent;
+  color: var(--text);
+  padding: 0.5rem 0.2rem;
+  display: grid;
+  gap: 0.25rem;
+  place-items: center;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  body {
+    place-items: stretch;
+  }
+
+  .app-shell {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
