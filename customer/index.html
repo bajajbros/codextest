@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer App - LuxeAura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/theme.css" />
+</head>
+<body>
+<div class="page">
+<header class="topbar"><a href="../index.html" class="brand">LuxeAura / Customer</a><button class="button alt" id="themePulse">Preview Motion</button></header>
+<div class="layout">
+<aside class="sidebar">
+  <div class="nav-group"><div class="nav-title">Customer Screens</div>
+    <a class="nav-link active" href="#splash">1 Splash</a><a class="nav-link" href="#onboarding">2 Onboarding</a><a class="nav-link" href="#auth">3 Login/Signup</a>
+    <a class="nav-link" href="#home">4 Home</a><a class="nav-link" href="#services">5 Services</a><a class="nav-link" href="#detail">6 Service Detail</a>
+    <a class="nav-link" href="#confirm">7 Booking Confirmation</a><a class="nav-link" href="#membership">8 Membership</a><a class="nav-link" href="#loyalty">9 Loyalty</a>
+    <a class="nav-link" href="#offers">10 Offers</a><a class="nav-link" href="#appointments">11 Appointments</a><a class="nav-link" href="#profile">12 Profile</a>
+    <a class="nav-link" href="#refer">13 Refer & Earn</a>
+  </div>
+</aside>
+<main class="content">
+  <section class="card hero"><p class="kicker">Premium Delhi Salon Experience</p><h1 style="margin-top:8px">Book. Relax. Glow.</h1><p class="small" style="margin-top:8px">Complete customer journey with loyalty, memberships, offers, referral and appointments.</p></section>
+
+  <section id="splash" class="card mobile-frame"><div class="mobile-screen"><p class="badge">Splash Screen</p><h2>LuxeAura Salon</h2><p class="small">Luxury hair, skin & bridal studio</p><div class="card hero" style="margin-top:auto;text-align:center"><h3>Book. Relax. Glow.</h3></div></div></section>
+
+  <section id="onboarding" class="card"><p class="badge">Onboarding (3 slides + skip)</p><div class="grid cols-3" style="margin-top:12px"><div class="card"><h3>Easy Booking</h3><p class="small">Pick service, staff, date and pay in minutes.</p></div><div class="card"><h3>Loyalty Points</h3><p class="small">Earn points on each visit and redeem instantly.</p></div><div class="card"><h3>Exclusive Offers</h3><p class="small">Birthday coupon, seasonal sale, members-only perks.</p></div></div></section>
+
+  <section id="auth" class="card"><p class="badge">Login / Signup</p><div class="list" style="margin-top:10px"><div class="row"><span>Phone Number (OTP)</span><span class="status ok">Required</span></div><div class="row"><span>Name</span><span class="status ok">Required</span></div><div class="row"><span>Email</span><span class="status warn">Optional</span></div><div class="row"><span>Birthday</span><span class="status ok">Offer trigger</span></div></div></section>
+
+  <section id="home" class="card"><p class="badge">Home Screen</p><div class="grid cols-2" style="margin-top:12px"><div class="card hero"><h3>Banner Slider</h3><p class="small">Membership offers, festive bundles, top-rated combos.</p><button class="button" style="margin-top:10px">Quick Book</button></div><div class="card"><h3>Upcoming Appointment</h3><p class="small">Fri, 7:30 PM · Hydra Facial with Mia</p><div class="pillset" style="margin-top:10px"><span class="pill">Hair</span><span class="pill">Skin</span><span class="pill">Bridal</span><span class="pill">Nails</span></div></div></div><div class="grid cols-3" style="margin-top:14px"><div class="metric"><div class="kicker">Membership</div><div class="value">Gold</div></div><div class="metric"><div class="kicker">Loyalty Points</div><div class="value">2,450</div></div><div class="metric"><div class="kicker">Refer & Earn</div><div class="value">₹500</div></div></div></section>
+
+  <section id="services" class="card"><p class="badge">Services Listing</p><div class="tabs" style="margin-top:10px"><span class="pill">All</span><span class="pill">Hair</span><span class="pill">Skin</span><span class="pill">Bridal</span><span class="pill">Nails</span></div><div class="list" style="margin-top:12px"><div class="row"><span>Keratin Treatment · 90 min · ₹3,500</span><button class="button">Book Now</button></div><div class="row"><span>Hydra Facial · 60 min · ₹2,200</span><button class="button">Book Now</button></div><div class="row"><span>Bridal HD Makeup · 150 min · ₹12,000</span><button class="button">Book Now</button></div></div></section>
+
+  <section id="detail" class="card"><p class="badge">Service Detail</p><div class="grid cols-2" style="margin-top:10px"><div><h3>Hydra Facial</h3><p class="small" style="margin-top:8px">Deep hydration, blackhead extraction, glow finishing mask.</p><div class="pillset" style="margin-top:10px"><span class="pill">₹2,200</span><span class="pill">60 min</span><span class="pill">Add-ons: LED, neck mask</span></div></div><div class="list"><div class="row"><span>Select Staff</span><span>Mia / Emma / Any</span></div><div class="row"><span>Select Date & Time</span><span>Calendar + slots</span></div><button class="button">Confirm Booking</button></div></div></section>
+
+  <section id="confirm" class="card"><p class="badge">Booking Confirmation</p><div class="list" style="margin-top:10px"><div class="row"><span>Booking ID</span><strong>LX-48392</strong></div><div class="row"><span>Date & Time</span><strong>Fri, 7:30 PM</strong></div><div class="row"><span>Salon Address</span><strong>Greater Kailash II, New Delhi</strong></div><div class="pillset"><button class="button alt">Cancel</button><button class="button">Reschedule</button></div></div></section>
+
+  <section id="membership" class="card"><p class="badge">Membership Plans</p><div class="grid cols-3" style="margin-top:12px"><div class="card"><h3>Silver</h3><p class="small">5% off + birthday gift</p><h2 style="margin-top:8px">₹2,999</h2><button class="button" style="margin-top:8px">Buy Now</button></div><div class="card hero"><h3>Gold</h3><p class="small">10% off + priority slots + 2 facials</p><h2 style="margin-top:8px">₹5,999</h2><button class="button" style="margin-top:8px">Buy Now</button></div><div class="card"><h3>Platinum</h3><p class="small">15% off + concierge + premium gifts</p><h2 style="margin-top:8px">₹11,999</h2><button class="button" style="margin-top:8px">Buy Now</button></div></div></section>
+
+  <section id="loyalty" class="card"><p class="badge">Loyalty Points</p><div class="grid cols-2" style="margin-top:12px"><div class="metric"><div class="kicker">Total Points</div><div class="value">2,450</div><p class="small">1 point per ₹100 spent</p></div><div class="card"><h3>History</h3><table class="table" style="margin-top:8px"><tr><th>Date</th><th>Activity</th><th>Points</th></tr><tr><td>12 Feb</td><td>Hydra Facial</td><td>+22</td></tr><tr><td>10 Feb</td><td>Redeemed on Hair Spa</td><td>-40</td></tr></table></div></div></section>
+
+  <section id="offers" class="card"><p class="badge">Offers Screen</p><div class="list" style="margin-top:10px"><div class="row"><span>Festival Glow Pack</span><span class="status ok">20% Off</span></div><div class="row"><span>Birthday Coupon</span><span class="status ok">₹500 Off</span></div><div class="row"><span>Weekday Skin Deal</span><span class="status warn">Limited</span></div></div></section>
+
+  <section id="appointments" class="card"><p class="badge">My Appointments</p><table class="table" style="margin-top:10px"><tr><th>Service</th><th>Date</th><th>Status</th></tr><tr><td>Hydra Facial</td><td>Fri 7:30 PM</td><td><span class="status ok">Upcoming</span></td></tr><tr><td>Nail Extension</td><td>10 Feb</td><td><span class="status warn">Completed</span></td></tr><tr><td>Hair Color</td><td>1 Feb</td><td><span class="status bad">Cancelled</span></td></tr></table></section>
+
+  <section id="profile" class="card"><p class="badge">Profile</p><div class="list" style="margin-top:10px"><div class="row"><span>Edit Details</span><span>→</span></div><div class="row"><span>Saved Addresses</span><span>2</span></div><div class="row"><span>Payment Methods</span><span>UPI / Card</span></div><div class="row"><span>Notification Toggle</span><span>On</span></div><div class="row"><span>Support</span><span>24x7 Chat</span></div><div class="row"><span>Logout</span><span>⎋</span></div></div></section>
+
+  <section id="refer" class="card"><p class="badge">Refer & Earn</p><div class="grid cols-2" style="margin-top:10px"><div class="metric"><div class="kicker">Referral Code</div><div class="value" style="font-size:20px">AVA-LUXE-19</div><button class="button" style="margin-top:10px">Share Code</button></div><div class="card"><h3>Reward Details</h3><p class="small" style="margin-top:8px">You get ₹250 wallet credit per successful referral. Friend gets ₹300 off on first booking.</p></div></div></section>
+
+</main></div></div>
+<script src="../assets/app.js"></script>
+</body></html>

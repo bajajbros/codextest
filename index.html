@@ -1,89 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LuxeAura Salon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="app-shell" aria-label="Premium salon mobile interface">
-      <header class="top-bar">
-        <div>
-          <p class="kicker">Good Afternoon, Ava</p>
-          <h1>Discover your next glow-up</h1>
-        </div>
-        <button class="icon-button" aria-label="Notifications">🔔</button>
-      </header>
-
-      <section class="hero-card">
-        <p class="pill">Luxe Signature Treatment</p>
-        <h2>Hydra Facial + Silk Blowout</h2>
-        <p class="hero-copy">Save 20% this week and get complimentary scalp therapy.</p>
-        <button class="primary-button">Book in 1 tap</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LuxeAura Suite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/theme.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar"><div class="brand">LuxeAura Suite</div><span class="small">Premium Salon Product UI Kit</span></header>
+    <main class="content" style="padding:24px;max-width:1100px;margin:0 auto;width:100%">
+      <section class="card hero">
+        <p class="kicker">Complete Project</p>
+        <h1 style="margin:6px 0 10px">Customer App + Admin Panel + Staff Panel</h1>
+        <p class="small">Designed for premium salons in a dark theme with gold accents, modular screens, and clean minimal UI.</p>
       </section>
-
-      <section class="quick-actions" aria-label="Quick actions">
-        <button class="action-card active">
-          <span>💅</span>
-          Nails
-        </button>
-        <button class="action-card">
-          <span>💇‍♀️</span>
-          Hair
-        </button>
-        <button class="action-card">
-          <span>🧖‍♀️</span>
-          Spa
-        </button>
-        <button class="action-card">
-          <span>💄</span>
-          Makeup
-        </button>
+      <section class="grid cols-3">
+        <a class="card" href="customer/index.html"><p class="badge">Main App</p><h2 style="margin-top:10px">Customer App (13 Screens)</h2><p class="small" style="margin-top:8px">Splash, onboarding, auth, booking, loyalty, offers, profile and more.</p></a>
+        <a class="card" href="admin/index.html"><p class="badge">Owner Console</p><h2 style="margin-top:10px">Salon Admin Panel</h2><p class="small" style="margin-top:8px">Dashboard, services, bookings, memberships, loyalty, customers.</p></a>
+        <a class="card" href="staff/index.html"><p class="badge">Optional Add-on</p><h2 style="margin-top:10px">Staff Panel</h2><p class="small" style="margin-top:8px">Assigned bookings, daily schedule, task status, and performance stats.</p></a>
       </section>
-
-      <section class="service-list" aria-label="Featured professionals">
-        <article class="service-card">
-          <div class="avatar" aria-hidden="true">EJ</div>
-          <div>
-            <h3>Emma James</h3>
-            <p>Color Specialist · 4.9 ★</p>
-          </div>
-          <span class="price">$120</span>
-        </article>
-
-        <article class="service-card">
-          <div class="avatar" aria-hidden="true">MN</div>
-          <div>
-            <h3>Mia Novak</h3>
-            <p>Hydra Facial Expert · 4.8 ★</p>
-          </div>
-          <span class="price">$95</span>
-        </article>
-
-        <article class="service-card">
-          <div class="avatar" aria-hidden="true">LS</div>
-          <div>
-            <h3>Luna Shah</h3>
-            <p>Bridal Stylist · 5.0 ★</p>
-          </div>
-          <span class="price">$210</span>
-        </article>
-      </section>
-
-      <nav class="bottom-nav" aria-label="Main navigation">
-        <button class="nav-item active" aria-label="Home">🏠<span>Home</span></button>
-        <button class="nav-item" aria-label="Bookings">📅<span>Bookings</span></button>
-        <button class="nav-item" aria-label="Messages">💬<span>Chat</span></button>
-        <button class="nav-item" aria-label="Profile">👤<span>Profile</span></button>
-      </nav>
     </main>
-    <script src="app.js"></script>
-  </body>
+  </div>
+</body>
 </html>
