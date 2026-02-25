@@ -1,0 +1,56 @@
+:root {
+  --bg: #09070f;
+  --bg-soft: #12101c;
+  --panel: #171425;
+  --panel-2: #1e1a2e;
+  --text: #f6f2e8;
+  --muted: #aca4ba;
+  --gold: #d4af6d;
+  --gold-soft: #f0d8a5;
+  --accent: #8d5eff;
+  --success: #57c58f;
+  --danger: #ff6f83;
+  --radius: 18px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; background: radial-gradient(circle at 10% 0%, #2a1d42 0, transparent 35%), var(--bg); color: var(--text); }
+a { color: inherit; text-decoration: none; }
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; position: sticky; top: 0; background: rgba(9,7,15,.85); backdrop-filter: blur(8px); border-bottom: 1px solid #2a223b; z-index: 10; }
+.brand { font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-soft); }
+.layout { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 20px; padding: 20px; }
+.sidebar { background: var(--bg-soft); border: 1px solid #2a223b; border-radius: var(--radius); padding: 14px; height: calc(100vh - 92px); overflow: auto; position: sticky; top: 76px; }
+.nav-group { margin-bottom: 18px; }
+.nav-title { font-size: 12px; color: var(--muted); margin: 6px 10px; text-transform: uppercase; letter-spacing: .08em; }
+.nav-link { display:block; padding: 10px 12px; border-radius: 12px; color: #ddd6ea; margin: 2px 0; border: 1px solid transparent; }
+.nav-link:hover,.nav-link.active { background: #231d36; border-color: #3a3152; color: var(--gold-soft); }
+.content { min-width:0; display:flex; flex-direction:column; gap:16px; }
+.card { background: linear-gradient(180deg, #181427, #141121); border:1px solid #302648; border-radius: var(--radius); padding: 18px; }
+.grid { display:grid; gap:16px; }
+.grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr));}
+h1,h2,h3,p{margin:0;}
+.kicker{color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.1em;}
+.hero{background:linear-gradient(135deg, rgba(212,175,109,.2), rgba(141,94,255,.16)); border:1px solid #5a4a2a;}
+.badge{display:inline-block;padding:5px 10px;background:#2a2237;border:1px solid #4d3f61;border-radius:999px;font-size:12px;color:var(--gold-soft)}
+.button{padding:10px 14px;border-radius:12px;border:1px solid #6e5830;background:linear-gradient(120deg,#f0d8a5,#d4af6d);color:#1a1207;font-weight:700;cursor:pointer;}
+.button.alt{background:#2a2237;color:#f2ebdc;border-color:#4b3c61;}
+.metric{padding:14px;border-radius:14px;background:#201a31;border:1px solid #372b4f;}
+.metric .value{font-size:26px;font-weight:800;color:var(--gold-soft);}
+.list{display:flex;flex-direction:column;gap:10px;}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px;border-radius:12px;background:#201a31;border:1px solid #362c49;}
+.mobile-frame{max-width:420px; margin:0 auto; border-radius:28px; border:1px solid #3a3153; background:linear-gradient(180deg,#151124,#100d1a); padding:14px; box-shadow:0 30px 80px rgba(0,0,0,.45);}
+.mobile-screen{display:flex;flex-direction:column;gap:12px;min-height:720px;}
+.small{font-size:13px;color:var(--muted);}
+.pillset{display:flex;gap:8px;flex-wrap:wrap}
+.pill{padding:7px 11px;border-radius:999px;background:#271f38;border:1px solid #403153;font-size:12px}
+.tabs{display:flex;gap:8px;overflow:auto;padding-bottom:2px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #312746;text-align:left;font-size:14px}
+.table th{color:var(--muted);font-weight:600}
+.status{padding:5px 9px;border-radius:999px;font-size:12px}
+.status.ok{background:rgba(87,197,143,.2);color:#9ce3be}
+.status.warn{background:rgba(212,175,109,.22);color:#f1d8a3}
+.status.bad{background:rgba(255,111,131,.2);color:#ffc1cb}
+@media (max-width: 980px){ .layout{grid-template-columns:1fr;} .sidebar{position:static;height:auto;} .grid.cols-4{grid-template-columns:repeat(2,minmax(0,1fr));} .grid.cols-3{grid-template-columns:1fr;} .grid.cols-2{grid-template-columns:1fr;} }
